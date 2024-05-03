@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+h1 {
+    font-family: 'Times New Roman';
+    color: #000000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    border-top: 1px solid #5e5e5e;
+    border-bottom: 1px solid #5e5e5e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav li {
+    font-family: 'didot','times new roman';
+    font-style: italic;
+    border-bottom: 1px solid #eeeeee;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:link {
+    color: #00005d;
+}
+
+nav a:hover {
+    color: #fece21;
+}
