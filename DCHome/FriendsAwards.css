@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Covered+By+Your+Grace&family=Gochi+Hand&family=Nothing+You+Could+Do&display=swap');
+
+/* Start of Grid */
+@media only screen and (max-width: 600px) {
+    /* CSS rules for screens with a maximum width of 600px */
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    nav {
+        grid-area: n;
+    }
+    header {
+        grid-area: h;
+    }
+    main {
+        grid-area: m;
+    }
+     aside {
+        grid-area: a;
+     }
+    footer {
+        grid-area: f;
+    }
+
+#background {
+    display: grid;
+    grid-template:
+    "n "
+    "h "
+    "m"        
+    "a"
+    "f";
+}
+/* End of Grid */
+
+/* Start of MEdia Query */
+@media (min-width: 38em) {
+    #background {
+       grid-template:
+     " n   n "
+     " h   h "
+     " m   m "
+     " a   a "
+     " f   f "
+     / 50% 50%;
+    }
+}
+ @media (min-width: 65em) {
+    nav ul {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       }
+    #background {
+        grid-template:
+       " n   n   n"
+       " h   h   h"
+       " m   m   m"
+       " a   a   a"
+       " f   f   f"
+       / 150px 1fr 30%;
+       }
+}
+@media (max-width: 768px) {
+    .hero {
+     height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+     height: 20vh;
+    }
+}
+
+/* End of Media Query */
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Start of Hero Image */
+.hero {
+    background-image: url('heroimage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content {
+    position: relative;
+    bottom: 280px;
+    width: 100%;
+    padding: 40px;
+}
+
+.hero-content h1 {
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6em;
+    margin: 0;
+    color: rgb(37, 112, 2);
+    display: flex;
+    justify-content: center;
+    text-align: flex-start;
+}
+/* End of Hero Image */
+
+/* Start of Nav Bar */
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    border-top: 1px solid #0f4605;
+    border-bottom: 1px solid #0f4605;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav li {
+    font-family: 'didot','times new roman';
+    font-style: italic;
+    /* border-bottom: 1px solid #eeeeee; */
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:link {
+    color: #784c0a;
+}
+
+nav a:hover {
+    color: #fece21;
+    text-decoration: underline;
+}
+
+nav a:visited {
+    color: rgb(132, 183, 255)
+}
+
+nav a:active {
+    color: rgb(177, 13, 13)
+}
+/* End of Nav Bar */
+
+/* Start of Table */
+
+.container {
+    margin: 15px
+}
+
+table {
+    font-family: helvetica, sans-serif, 'times new roman';
+    text-align: center;
+}
+thead {
+    background-color: rgba(166, 100, 171,50%);
+}
+th {
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    text-align: center;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+tbody tr:hover {
+    background-color: rgba(242, 217, 191, 70%);
+}
+
+/* End of Table */
+
+#disclaimer {
+    font-family: helvetica, sans-serif, 'times new roman';
+    text-align: left;
+}
+
+footer {
+    font-family: helvetica, sans-serif, 'times new roman';
+    color: black;
+    text-align: center;
+    background-color: rgba(169, 168, 168, 0.384);
+}
