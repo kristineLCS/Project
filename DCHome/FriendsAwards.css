@@ -36,7 +36,7 @@
 }
 /* End of Grid */
 
-/* Start of MEdia Query */
+/* Start of Media Query */
 @media (min-width: 38em) {
     #background {
        grid-template:
@@ -75,51 +75,56 @@
      height: 20vh;
     }
 }
-
 /* End of Media Query */
-
-body {
-    background-color: rgb(255, 255, 255);
-}
 
 /* Start of Hero Image */
 .hero {
     background-image: url('heroimage.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 120vh;
     color: white;
-    display: flex;
+    margin-bottom: 20px;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .hero-content {
-    position: relative;
+    /* position: relative; */
     bottom: 280px;
     width: 100%;
     padding: 40px;
 }
-
-.hero-content h1 {
+/* 
+.hero-content p {
     font-family: "Covered By Your Grace", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 6em;
+    font-size: 3em;
     margin: 0;
     color: rgb(37, 112, 2);
     display: flex;
     justify-content: center;
-    text-align: flex-start;
+    align-content: flex-end;
+} */
+
+@media only screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 3em;
+    }
 }
 /* End of Hero Image */
 
-/* Start of Nav Bar */
+/* Start of nav */
 nav ul {
     list-style-type: none;
     padding-left: 0;
-    border-top: 1px solid #0f4605;
-    border-bottom: 1px solid #0f4605;
+    margin-top: 0;
+    margin-bottom: 0;
+    /* border-top: 1px solid #0f4605;
+    border-bottom: 1px solid #0f4605; */
+    background-color: rgb(199, 198, 198);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -127,12 +132,39 @@ nav ul {
 }
 
 nav li {
-    font-family: 'didot','times new roman';
+    font-family: "Covered By Your Grace", cursive;
     font-style: italic;
+    font-size: 1em;
     /* border-bottom: 1px solid #eeeeee; */
     text-align: center;
-    padding-top: 0.5em;
+    padding-top: 1em;
     padding-bottom: 0.5em;
+}
+
+#dot1 {
+    color: rgb(254, 9, 9);
+    font-family: helvetica;
+    font-size: large;
+}
+
+#dot2 {
+    color: rgb(0, 217, 255);
+    font-family: helvetica;
+    font-size: large;
+
+}
+
+#dot3 {
+    color: rgb(254, 197, 9);
+    font-family: helvetica;
+    font-size: large;
+}
+
+#dot4 {
+    color: rgb(6, 120, 8);
+    font-family: helvetica;
+    font-size: large;
+
 }
 
 nav a {
@@ -141,7 +173,7 @@ nav a {
 }
 
 nav a:link {
-    color: #784c0a;
+    color: #412a07;
 }
 
 nav a:hover {
@@ -150,44 +182,81 @@ nav a:hover {
 }
 
 nav a:visited {
-    color: rgb(132, 183, 255)
+    color: 784c0a;
 }
 
 nav a:active {
     color: rgb(177, 13, 13)
 }
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
 /* End of Nav Bar */
 
+/* Start of Body */
+body {
+    background-color: rgb(171, 139, 122);
+    margin: 0;
+    padding: 0;
+}
+
+#herodisclaimer {
+    font-family: helvetica, sans-serif, 'times new roman';
+    color: black;
+    display: flex;
+    align-items: flex-end;
+}
+/*  End of Body*/
+
 /* Start of Table */
+.container {
+    /* margin: 15px */
+    display: flex;
+    justify-content: center;
+}
 
 .container {
-    margin: 15px
+    margin: 15px;
 }
 
 table {
     font-family: helvetica, sans-serif, 'times new roman';
     text-align: center;
 }
+
 thead {
-    background-color: rgba(166, 100, 171,50%);
+    background-color: rgb(255, 255, 255);
 }
 th {
     font-family: "Covered By Your Grace", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 3em;
+    font-size: 1.5em;
     text-align: center;
 }
 th, td {
     padding: 8px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0px solid #000000;
+    /* background-color: white; */
 }
 tbody tr:hover {
-    background-color: rgba(242, 217, 191, 70%);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 /* End of Table */
+
+.img {
+    display: flex;
+    justify-content: center;
+}
 
 #disclaimer {
     font-family: helvetica, sans-serif, 'times new roman';
@@ -198,5 +267,7 @@ footer {
     font-family: helvetica, sans-serif, 'times new roman';
     color: black;
     text-align: center;
-    background-color: rgba(169, 168, 168, 0.384);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(255, 255, 255);
 }
