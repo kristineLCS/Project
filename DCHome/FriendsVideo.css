@@ -84,7 +84,7 @@
     background-position: center;
     height: 120vh;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
@@ -124,7 +124,7 @@ nav ul {
     margin-bottom: 0;
     /* border-top: 1px solid #0f4605;
     border-bottom: 1px solid #0f4605; */
-    background-color: rgb(199, 198, 198);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -141,6 +141,40 @@ nav li {
     padding-bottom: 0.5em;
 }
 
+.logo {
+    margin-top: 5px;
+    margin-bottom: 0pxs;
+    padding: 0;
+}
+
+/* .casts {
+    margin-left: 870px;
+    margin-right: 100px;
+}
+
+.videos {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.awards {
+    margin-left: 100px;
+    margin-right: 80px;
+}  */
+
+/* #dot1 {
+    color: rgb(254, 9, 9);
+    font-family: helvetica;
+    font-size: large;
+} */
+
+/* #dot2 {
+    color: rgb(0, 217, 255);
+    font-family: helvetica;
+    font-size: large;
+
+} */
+
 #dot1 {
     color: rgb(254, 9, 9);
     font-family: helvetica;
@@ -148,20 +182,7 @@ nav li {
 }
 
 #dot2 {
-    color: rgb(0, 217, 255);
-    font-family: helvetica;
-    font-size: large;
-
-}
-
-#dot3 {
-    color: rgb(254, 197, 9);
-    font-family: helvetica;
-    font-size: large;
-}
-
-#dot4 {
-    color: rgb(6, 120, 8);
+    color:  rgb(0, 217, 255);
     font-family: helvetica;
     font-size: large;
 
@@ -182,22 +203,17 @@ nav a:hover {
 }
 
 nav a:visited {
-    color: 784c0a;
+    color: #784c0a;
 }
 
 nav a:active {
     color: rgb(177, 13, 13)
 }
 
-.logo {
-    margin: 0;
-    padding: 0;
-}
-
-img {
+/* img {
     margin-top: 10px;
     margin-bottom: 5px;
-}
+} */
 /* End of Hero Image */
 
 /* Start of Body */
@@ -206,7 +222,15 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.specialmentions {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; 
+}
 .container {
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,20 +238,23 @@ body {
 }
 
 .container iframe {
-    margin:2px;
+    margin-top: 0;
+    margin-bottom: 20px;
     border-style: none;
 }
 
-#heading {
+/* #heading {
     font-family: "Covered By Your Grace", cursive;
     font-weight: 400;
     font-style: normal;
     text-align: center;
-}
+} */
 
-p {
+h4 {
     text-align: center;
     font-family: helvetica, 'gill sans', 'times new roman';
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 /* End of Body */
 
