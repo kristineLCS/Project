@@ -86,7 +86,7 @@
     height: 120vh;
     color: white;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     /* flex-direction: column;
     justify-content: center; */
 }
@@ -97,6 +97,10 @@
     width: 100%;
     padding: 40px;
 }
+
+/* #herodisclaimer {
+    margin-top: 0;
+} */
 
 /* .hero-content h1 {
     font-family: "Covered By Your Grace", cursive;
@@ -158,19 +162,6 @@ nav li {
     margin-right: 80px;
 }  */
 
-/* #dot1 {
-    color: rgb(254, 9, 9);
-    font-family: helvetica;
-    font-size: large;
-} */
-
-/* #dot2 {
-    color: rgb(0, 217, 255);
-    font-family: helvetica;
-    font-size: large;
-
-} */
-
 #dot1 {
     color: rgb(254, 9, 9);
     font-family: helvetica;
@@ -226,7 +217,8 @@ body {
     /* background-color: rgb(254, 202, 149); */
 }
 
-.casts {
+.castsheading {
+    margin-top: 40px;
     display: flex;
     justify-content: center; 
 }
@@ -245,7 +237,7 @@ h3 {
 }
 
 .credit {
-    margin: 0;
+    margin-top: 0;
 }
 
 .insta {
@@ -255,7 +247,7 @@ h3 {
 
 p {
     font-family: helvetica, sans-serif, 'times new roman';
-    margin: 5px;
+    margin: 0;
 }
 
 /* End of Main */
