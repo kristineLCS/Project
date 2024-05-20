@@ -162,18 +162,6 @@ nav li {
     margin-right: 80px;
 }  */
 
-/* #dot1 {
-    color: rgb(254, 9, 9);
-    font-family: helvetica;
-    font-size: large;
-} */
-
-/* #dot2 {
-    color: rgb(0, 217, 255);
-    font-family: helvetica;
-    font-size: large;
-
-} */
 
 #dot1 {
     color: rgb(254, 9, 9);
@@ -256,11 +244,14 @@ p {
 }
 
 .about {
+    margin-top: 40px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
 
 .gallery {
+    margin-top: 80px;
     display: flex;
     justify-content: center;
 }
