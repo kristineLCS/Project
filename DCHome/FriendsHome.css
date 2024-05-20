@@ -58,10 +58,9 @@
         grid-template:
        " n   n   n"
        " h   h   h"
-       " m   m   m"
-       " a   a   a"
+       " m   m   a"
        " f   f   f"
-       / 150px 1fr 30%;
+       / 150px 1fr 10%;
        }
 }
 @media (max-width: 768px) {
@@ -217,14 +216,14 @@ body {
 
 /* Start of Main */
 
-h2 {
+/* h2 {
     font-family: "Covered By Your Grace", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 3em;
     text-align: center;
     margin-bottom: 5px;
-}
+} */
 
 h4 {
     font-family: "Covered By Your Grace", cursive;
@@ -238,11 +237,12 @@ h4 {
 p {
     font-family: helvetica, 'gill sans', 'times new roman';
     text-align: center;
-    margin-top: 5px;
-    margin-left: 30px;
-    margin-right: 30px;
 }
 
+.disclaimer {
+    display: flex;
+    justify-content: center;
+}
 .about {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -277,12 +277,10 @@ hr {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
- #smallimage {
+#smallimage {
     margin-top: 10px;
     margin-bottom: 10px;
- }
-
+}
 
 #mediumimage {
     display: flex;
@@ -290,10 +288,11 @@ hr {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 #mediumimage {
     margin-top: 10px;
     margin-bottom: 10px;
- }
+}
 
 #largeimage {
     display: flex;
@@ -305,7 +304,7 @@ hr {
 #largeimage {
     margin-top: 10px;
     margin-bottom: 10px;
- }
+}
 
 /* img {
     margin-top: 10px;
@@ -313,11 +312,38 @@ hr {
 } */
 /* End of Main */
 
+/* Start of asisde */
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+aside {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+}
+
+.follow {
+    font-family: "Covered By Your Grace", cursive;
+    font-size: x-large;
+    margin-top: 10px;
+
+}
+/* End of aside */
+
 footer {
     font-family: helvetica, sans-serif, 'times new roman';
+    font-size: small;
     color: black;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
     background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.footerbox {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }

@@ -162,19 +162,6 @@ nav li {
     margin-right: 80px;
 }  */
 
-/* #dot1 {
-    color: rgb(254, 9, 9);
-    font-family: helvetica;
-    font-size: large;
-} */
-
-/* #dot2 {
-    color: rgb(0, 217, 255);
-    font-family: helvetica;
-    font-size: large;
-
-} */
-
 #dot1 {
     color: rgb(254, 9, 9);
     font-family: helvetica;
@@ -260,9 +247,15 @@ h4 {
 
 footer {
     font-family: helvetica, sans-serif, 'times new roman';
+    font-size: small;
     color: black;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
     background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.footerbox {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
