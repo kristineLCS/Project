@@ -18,9 +18,6 @@
     main {
         grid-area: m;
     }
-     aside {
-        grid-area: a;
-     }
     footer {
         grid-area: f;
     }
@@ -31,7 +28,6 @@
     "n "
     "h "
     "m"        
-    "a"
     "f";
 }
 /* End of Grid */
@@ -43,7 +39,6 @@
      " n   n "
      " h   h "
      " m   m "
-     " a   a "
      " f   f "
      / 50% 50%;
     }
@@ -59,7 +54,6 @@
        " n   n   n"
        " h   h   h"
        " m   m   m"
-       " a   a   a"
        " f   f   f"
        / 150px 1fr 30%;
        }
@@ -67,12 +61,6 @@
 @media (max-width: 768px) {
     .hero {
      height: 50vh;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-content h1 {
-     height: 20vh;
     }
 }
 /* End of Media Query */
@@ -84,10 +72,10 @@
     background-position: center;
     height: 120vh;
     color: white;
-    margin-bottom: 0;
-    /* display: flex;
+    margin-bottom: 20px;
+    display: flex;
     flex-direction: column;
-    justify-content: center; */
+    justify-content: center;
 }
 
 .hero-content {
@@ -95,24 +83,6 @@
     bottom: 280px;
     width: 100%;
     padding: 40px;
-}
-/* 
-.hero-content p {
-    font-family: "Covered By Your Grace", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3em;
-    margin: 0;
-    color: rgb(37, 112, 2);
-    display: flex;
-    justify-content: center;
-    align-content: flex-end;
-} */
-
-@media only screen and (max-width: 768px) {
-    .hero h1 {
-        font-size: 3em;
-    }
 }
 /* End of Hero Image */
 
@@ -122,8 +92,6 @@ nav ul {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-    /* border-top: 1px solid #0f4605;
-    border-bottom: 1px solid #0f4605; */
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
@@ -135,7 +103,6 @@ nav li {
     font-family: "Covered By Your Grace", cursive;
     font-style: italic;
     font-size: 1em;
-    /* border-bottom: 1px solid #eeeeee; */
     text-align: center;
     padding-top: 1em;
     padding-bottom: 0.5em;
@@ -197,10 +164,6 @@ nav a:active {
     color: rgb(177, 13, 13)
 }
 
-/* img {
-    margin-top: 10px;
-    margin-bottom: 5px;
-} */
 /* End of Nav Bar */
 
 /* Start of Body */
@@ -209,17 +172,10 @@ body {
     margin: 0;
     padding: 0;
 }
-
-#herodisclaimer {
-    font-family: helvetica, sans-serif, 'times new roman';
-    color: black;
-    margin: 0;
-}
 /*  End of Body*/
 
 /* Start of Table */
 .container {
-    /* margin: 15px */
     display: flex;
     justify-content: center;
 }
@@ -231,28 +187,33 @@ body {
 table {
     font-family: helvetica, sans-serif, 'times new roman';
     text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
 }
 
 thead {
     background-color: rgb(255, 255, 255);
 }
+
 th {
     font-family: "Covered By Your Grace", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 1.5em;
     text-align: center;
+
 }
+
 th, td {
     padding: 8px;
     text-align: center;
-    border-bottom: 0px solid #000000;
-    /* background-color: white; */
+    border-bottom: 1px solid #000000;
 }
+
 tbody tr:hover {
     background-color: rgba(255, 255, 255, 0.7);
 }
-
 /* End of Table */
 
 .img {
