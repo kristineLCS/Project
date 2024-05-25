@@ -79,12 +79,10 @@
 }
 
 .hero-content {
-    /* position: relative; */
     bottom: 280px;
     width: 100%;
     padding: 40px;
 }
-/* 
 /* End of Hero Image */
 
 
@@ -107,29 +105,14 @@ nav li {
     font-size: 1em;
     text-align: center;
     padding-top: 1em;
-    padding-bottom: 0.5em;
+    padding-bottom: 0em;
 }
 
 .logo {
     margin-top: 5px;
-    margin-bottom: 0pxs;
+    margin-bottom: 0;
     padding: 0;
 }
-
-/* .casts {
-    margin-left: 870px;
-    margin-right: 100px;
-}
-
-.videos {
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.awards {
-    margin-left: 100px;
-    margin-right: 80px;
-}  */
 
 #dot1 {
     color: rgb(254, 9, 9);
@@ -141,7 +124,6 @@ nav li {
     color:  rgb(0, 217, 255);
     font-family: helvetica;
     font-size: large;
-
 }
 
 nav a {
@@ -167,13 +149,15 @@ nav a:active {
 }
 /* End of Nav */
 
-/* Start of Main */
+/* Staret of Body */
 body {
     background-color: rgb(171, 139, 122);
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
+/* End of Body */
 
+/* Start of Main */
 #img {
     display: flex;
     flex-direction: column;
