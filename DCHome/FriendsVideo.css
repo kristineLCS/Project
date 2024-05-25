@@ -79,7 +79,6 @@
 }
 
 .hero-content {
-    /* position: relative; */
     bottom: 280px;
     width: 100%;
     padding: 40px;
@@ -113,21 +112,6 @@ nav li {
     margin-bottom: 0pxs;
     padding: 0;
 }
-
-/* .casts {
-    margin-left: 870px;
-    margin-right: 100px;
-}
-
-.videos {
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.awards {
-    margin-left: 100px;
-    margin-right: 80px;
-}  */
 
 #dot1 {
     color: rgb(254, 9, 9);
@@ -178,7 +162,7 @@ body {
     display: flex;
     justify-content: center; 
 }
-.container {
+.iframe-container {
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
@@ -186,17 +170,22 @@ body {
     flex-direction: column;
 }
 
-.container iframe {
+.iframe-container {
     margin-top: 0;
     margin-bottom: 20px;
+}
+
+iframe {
     border-style: none;
+    aspect-ratio: 16 / 9;
+    width: 60%;
 }
 
 h4 {
     text-align: center;
     font-family: helvetica, 'gill sans', 'times new roman';
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin-top: 40px;
+    margin-bottom: 3px;
 }
 /* End of Body */
 
